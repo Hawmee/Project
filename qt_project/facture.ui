@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>facture</class>
+ <widget class="QDialog" name="facture">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1133</width>
+    <height>743</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="styleSheet">
+          <string notr="true">font-size:20px;background:transparent;
+color:black;</string>
+         </property>
+         <property name="text">
+          <string>Num facture :</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_numfact">
+         <property name="styleSheet">
+          <string notr="true">background:transparent;
+color:black;font-size:20px;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="styleSheet">
+          <string notr="true">font-size:20px;background:transparent;
+color:black;</string>
+         </property>
+         <property name="text">
+          <string>Date de facturation (mois-jour-annee):</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="dateEdit">
+         <property name="styleSheet">
+          <string notr="true">font-size:20px;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">font-size:20px;background:transparent;
+color:black;</string>
+         </property>
+         <property name="text">
+          <string>Num client :</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_numclient">
+         <property name="styleSheet">
+          <string notr="true">font-size:20px;background:transparent;
+color:black;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="styleSheet">
+            <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+color:black;</string>
+           </property>
+           <property name="text">
+            <string>rechercher</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">font-size:20px;background:transparent;
+color:black;</string>
+           </property>
+           <property name="text">
+            <string>Resultat du recherche :</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableView" name="tableView">
+           <property name="styleSheet">
+            <string notr="true">font-size:20px;font-size:20px;background-color: rgb(238, 238, 238);
+color:black;</string>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectItems</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="styleSheet">
+            <string notr="true">font-size:20px;background:transparent;
+color:black;</string>
+           </property>
+           <property name="text">
+            <string>Nom du client trouvée :</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_nomclient_2">
+           <property name="styleSheet">
+            <string notr="true">font-size:20px;background:transparent;
+color:black;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="pushButton_go_to_modclient">
+             <property name="styleSheet">
+              <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Modifier/creer</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="styleSheet">
+              <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>supprimer</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QCommandLinkButton" name="commandLinkButton_save_facture">
+       <property name="styleSheet">
+        <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+color:black;</string>
+       </property>
+       <property name="text">
+        <string>Enregister</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCommandLinkButton" name="commandLinkButton_3">
+       <property name="styleSheet">
+        <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+color:black;</string>
+       </property>
+       <property name="text">
+        <string>Fin</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="2">
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">font-size:20px;background:transparent;
+color:black;</string>
+       </property>
+       <property name="text">
+        <string>Num produit :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_numprod">
+       <property name="styleSheet">
+        <string notr="true">font-size:20px;background:transparent;
+color:black;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="styleSheet">
+        <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+color:black;</string>
+       </property>
+       <property name="text">
+        <string>Rechercher</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="styleSheet">
+        <string notr="true">font-size:20px;background:transparent;
+color:black;</string>
+       </property>
+       <property name="text">
+        <string>resultat du recherche :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableView" name="tableView_2">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(238, 238, 238);
+color:black;font-size:20px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_11">
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:black;font-size:20px;</string>
+       </property>
+       <property name="text">
+        <string>Nom du produit trouvée:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_nomprod">
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:black;font-size:20px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:black;font-size:20px;</string>
+       </property>
+       <property name="text">
+        <string>Pu du produit :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_puprod">
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:black;font-size:20px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:black;font-size:20px;</string>
+       </property>
+       <property name="text">
+        <string>Qteé commandeé</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="spinBox_qte">
+       <property name="styleSheet">
+        <string notr="true">font-size:20px;background:transparent;
+color:black;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="pushButton_gotomod_produit">
+         <property name="styleSheet">
+          <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+color:black;</string>
+         </property>
+         <property name="text">
+          <string>Modifier/creer</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="styleSheet">
+          <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+color:black;</string>
+         </property>
+         <property name="text">
+          <string>supprimer</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="1">
+    <widget class="Line" name="line_4">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="3">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">
+*{
+font: 8pt &quot;MV Boli&quot;;
+
+font-size:35px;
+color: black;
+border-radius:0px;
+}</string>
+       </property>
+       <property name="text">
+        <string>                            Edition d une facture</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QCommandLinkButton" name="commandLinkButton_4">
+     <property name="styleSheet">
+      <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+color:black;</string>
+     </property>
+     <property name="text">
+      <string>voir la facture du client</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

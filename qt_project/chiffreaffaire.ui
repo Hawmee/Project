@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chiffreaffaire</class>
+ <widget class="QMainWindow" name="chiffreaffaire">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1389</width>
+    <height>678</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">*{
+font: 8pt &quot;MV Boli&quot;;
+font-size:35px;
+color: black;
+border-radius:0px;
+}</string>
+          </property>
+          <property name="text">
+           <string>             chiffre d'affaire par client</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="styleSheet">
+             <string notr="true">font-size:20px;
+background:transparent;
+color:black;
+</string>
+            </property>
+            <property name="text">
+             <string>Date :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="styleSheet">
+             <string notr="true">font-size:20px;
+background:transparent;
+color:black;
+</string>
+            </property>
+            <property name="text">
+             <string>Annuel :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="styleSheet">
+             <string notr="true">font-size:20px;
+background:transparent;
+color:black;
+</string>
+            </property>
+            <property name="text">
+             <string>entrer l'année  :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinBox">
+            <property name="styleSheet">
+             <string notr="true">font-size:20px;
+background-color: rgba(207, 207, 207, 207);
+color:black;
+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_affiche_affaire">
+            <property name="styleSheet">
+             <string notr="true">font-size:20px;
+color:black;
+background-color: rgb(207, 207, 207);</string>
+            </property>
+            <property name="text">
+             <string>confirmer</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="styleSheet">
+             <string notr="true">font-size:20px;
+background:transparent;
+color:black;
+</string>
+            </property>
+            <property name="text">
+             <string>entrer les dates (année-mois-jour):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="styleSheet">
+             <string notr="true">font-size:20px;
+background:transparent;
+color:black;
+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_2">
+            <property name="styleSheet">
+             <string notr="true">font-size:20px;
+background:transparent;
+color:black;
+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="styleSheet">
+             <string notr="true">font-size:20px;
+color:black;
+background-color: rgb(207, 207, 207);</string>
+            </property>
+            <property name="text">
+             <string>confirmer</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCommandLinkButton" name="commandLinkButton">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(207, 207, 207);
+color:black;
+font-size:20px;
+
+</string>
+            </property>
+            <property name="text">
+             <string>Fin</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton">
+            <property name="styleSheet">
+             <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+
+color:black;</string>
+            </property>
+            <property name="text">
+             <string>          afficher la liste d'affaire par clients :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_3"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QTableView" name="tableView">
+            <property name="styleSheet">
+             <string notr="true">font-size:20px;
+color:black;
+background-color: rgb(207, 207, 207);</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>produit</class>
+ <widget class="QDialog" name="produit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>974</width>
+    <height>686</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <family>MV Boli</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">*{
+font: 8pt &quot;MV Boli&quot;;
+	background-color: rgb(255, 255, 255);
+font-size:35px;
+color: black;
+border-radius:0px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Mise a jour Produit :</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>MV Boli</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:20px;
+background:transparent;
+color:black;</string>
+       </property>
+       <property name="text">
+        <string>Numero du Produit :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_numprod">
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:black;font-size:20px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_recherchprod">
+       <property name="font">
+        <font>
+         <family>MV Boli</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+color:black;</string>
+       </property>
+       <property name="text">
+        <string>Rechercher</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:black;font-size:20px;</string>
+       </property>
+       <property name="text">
+        <string>resultat de recherche :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableView" name="tableview0">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(238, 238, 238);
+color:black;font-size:15px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_supprod">
+       <property name="font">
+        <font>
+         <family>MV Boli</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+color:black;</string>
+       </property>
+       <property name="text">
+        <string>Supprimer</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_9">
+       <property name="font">
+        <font>
+         <family>MV Boli</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:20px;background:transparent;
+color:black;</string>
+       </property>
+       <property name="text">
+        <string>Nom du Produit :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_nomprod">
+       <property name="font">
+        <font>
+         <family>MV Boli</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:black;font-size:20px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:black;font-size:20px;</string>
+       </property>
+       <property name="text">
+        <string>PU    :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_pu">
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:black;font-size:20px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:black;font-size:20px;</string>
+       </property>
+       <property name="text">
+        <string>stock initial :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_stkini">
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:black;font-size:20px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="pushButton_modprod">
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+color:black;</string>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_creatprod">
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+color:black;</string>
+         </property>
+         <property name="text">
+          <string>Creer</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="styleSheet">
+        <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+color:black;</string>
+       </property>
+       <property name="text">
+        <string>Afficher la liste</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:black;font-size:20px;</string>
+       </property>
+       <property name="text">
+        <string>Liste des Produits :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableView" name="tableViewprod">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(238, 238, 238);
+color:black;font-size:15px;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="Line" name="line_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QCommandLinkButton" name="commandLinkButton_2">
+       <property name="styleSheet">
+        <string notr="true">font-size:20px;
+background-color: rgb(207, 207, 207);
+color:black;</string>
+       </property>
+       <property name="text">
+        <string>Fin</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
